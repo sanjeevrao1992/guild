@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html ng-app="GuildMockup" lang="en">
+<head>
+<title>Investcube Homepage</title>
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+	  <!--styling libraries-->
+	  <link rel="stylesheet" href="../guild/libraries/bootstrap/dist/css/bootstrap.min.css"/>
+	  
+	  <!--External Style Sheet-->
+	  <link rel="stylesheet" href="../guild/assets/css/style.css"/>
+	  
+	  <!-- AngularJS -->
+	  <script src = "../app/jslibraries/angular/angular.min.js"></script>
+	  <script src="../app/jslibraries/angular-ui-router/angular-ui-router.min.js"></script>
+	  <script src="../app/jslibraries/ui-bootstrap-tpls.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+				<div class="SidebarElements">
+					<div class="tab">
+					<div><img src=""></img><div>
+					<div class="title pageTitle">INVESTCUBE</div>
+						<button class="tablinks">Home</button>
+						<hr class="pull-right sideMenuLines">
+						<button class="tablinks">Team</button>
+						<hr class="pull-right sideMenuLines">
+						<button class="tablinks">About</button>
+						<hr class="pull-right sideMenuLines">
+						<button class="tablinks">Portfolio</button>
+						<hr class="pull-right sideMenuLines">
+						<button class="tablinks">Contact</button>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+</body>
+</html>
+
+<!--<div class="Home-Page" >
+
+		<div class="inner-content">
+			<div class="row" style="margin-right:0px;">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<span>INVESTCUBE</span>
+						<div class="SidebarElements">
+							<div class="tab">
+								<button class="tablinks">London</button>
+								<button class="tablinks">Paris</button>
+								<button class="tablinks">Tokyo</button>
+							</div>
+						</div>
+				</div>
+			</div>		
+		</div>
+
+		<div ng-show="vm.value">
+			<div class="label-name">
+				<label class="labeltype-name">{{vm.labTypeName}}</label>
+			</div>
+			<div class="row" style="margin-right:0px;" >
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 2% 15%;">
+					<div ng-repeat="lab in vm.tileValue track by $index" style="display:inline-block;" ui-sref="LabDetails({labId: lab.id})">
+						<div id="box_{{$index}}">
+							<span id="divelement_{{$index}}" ng-mouseover="vm.hoverIn($index)" ng-mouseout="vm.hoverOut()" class="square" ng-class={'up-lab':lab.status_val==true,'down-lab':lab.status_val==false}>
+							<div><span class="splash-labName">{{lab.data.name}}<br/></span></div>
+							<div><img class="serverImg" ng-if="lab.status_val==true" src="../app/assets/images/ServerUpIcon.png"></img></div>
+							<div><img class="serverImg" ng-if="lab.status_val==false" src="../app/assets/images/ServerDownIcon.png"></img></div>
+								
+								<div ng-show="vm.hoverEdit == $index" class="slide-hover" ng-class={'up-lab':lab.status_val==true,'down-lab':lab.status_val==false}>
+									<span class="labName">{{lab.data.name}}<br/></span>
+									<div class="hoverImage" align="center"><img ng-if="lab.status_val==true" src="../app/assets/images/ServerUpIcon.png"></img></div>
+									<div align="center"><img ng-if="lab.status_val==false" src="../app/assets/images/ServerDownIcon.png"></div><br/>
+									<div align="center"><span ng-if="lab.status_val==true" class="activeValue">10 DAYS UP</span><span ng-if="lab.status_val==false" class="activeValue">10 DAYS DOWN</span></div>
+									<div show-time-chart class="statusBarProgressData" start-date-val="04-04-2017" end-date-val="06-24-2017"></div>
+										<span class="labDetails" align="left">
+										Start Date: 04-04-2017<br/> <!--{{lab.data.startDate}} This value should be appended in get Labs API
+										End Date: 06-24-2017<br/> <!--{{lab.data.endDate}} This value should be appended in get Labs API
+										User: {{lab.data.tenant}}
+										</span>
+								</div>
+
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div ng-show="vm.noData">
+			<div class="label-name">
+				<label class="labeltype-name">{{vm.labTypeName}} -- No Data Available</label>
+			</div>
+		</div>	
+		
+</div>
+
+<!--cg-busy="{promise:myPromise,message:'Loading details from server',templateUrl:'../app/loadingSpinner/spinner.html',backdrop:false,delay:300,minDuration:700}"-->
+
+<!--<div id="mySpinner">
+	<div class="LoadingSpinnerText">Loading data from server...</div>
+    <div class="ajax-loader"><img src="../app/assets/images/Loading_icon2.gif"/><div>
+</div>-->
+
+
+
+

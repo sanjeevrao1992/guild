@@ -1,0 +1,89 @@
+div.tab {
+    
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+}
+
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    /*padding: 22px 16px;*/
+	padding-top: 22px;
+	padding-bottom: 22px;
+    width: 100%;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+div.tab button:hover {
+    /*background-color: #ddd;*/
+	fill-color: blue;
+	color: purple;
+	border-right: 3px;
+	border-bottom: 0px;
+	border-top: 0px;
+	border-left: 0px;
+	border-style: solid;
+	border-color: purple;
+	font-size: 18px;
+}
+
+div.tab button.active {
+	color: purple;
+	border-right: 3px;
+	border-bottom: 0px;
+	border-top: 0px;
+	border-left: 0px;
+	border-style: solid;
+	border-color: purple;
+	font-size: 18px;
+}
+
+/*.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}*/
+
+.SidebarElements {
+height: 10000px;
+}
+
+.container {
+margin-left: 0px;
+padding-left: 0px;
+}
+
+.pageTitle {
+text-align: center;
+	padding-top: 22px;
+	padding-bottom: 10px;
+	font-size: 18px;
+	letter-spacing: 6px;
+}
+
+.tablinks {
+text-align: right;
+padding-right: 15%
+}
+
+.sideMenuLines {
+	margin-top: 0px;
+	margin-bottom: 0px;
+    border-width: 0.5px;
+    border-color: rgb(210, 210, 210);
+    border-style: solid;
+    text-align: right;
+    width: 90%;
+    height: 0;
+    padding-top: 0px;
+}
