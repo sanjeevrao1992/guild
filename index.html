@@ -1,45 +1,39 @@
 <!DOCTYPE html>
 <html ng-app="GuildMockup" lang="en">
 <head>
-<title>Investcube Homepage</title>
+<title>INVESTCUBE</title>
 	  <meta charset="utf-8">
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  
 	  <!--styling libraries-->
-	  <link rel="stylesheet" href="../guild/libraries/bootstrap/dist/css/bootstrap.min.css"/>
+	  <link rel="stylesheet" href="/libraries/bootstrap/dist/css/bootstrap.min.css"/>
 	  
 	  <!--External Style Sheet-->
-	  <link rel="stylesheet" href="../guild/assets/css/style.css"/>
+	  <link rel="stylesheet" href="/assets/css/style.css"/>
 	  
 	  <!-- AngularJS -->
-	  <script src = "../app/jslibraries/angular/angular.min.js"></script>
-	  <script src="../app/jslibraries/angular-ui-router/angular-ui-router.min.js"></script>
-	  <script src="../app/jslibraries/ui-bootstrap-tpls.js"></script>
+	  <script src="/libraries/angular/angular.min.js"></script>
+	  <script src="/libraries/angular-ui-router/angular-ui-router.min.js"></script>
+	  <script src="/libraries/ui-bootstrap-tpls.js"></script>
+
+	  <!--Modules-->
+	  <script src="/app.js"></script>
+
+	  <!--Artifacts-->
+	  <script src="/config.js"></script>
+	  <script src="/components/home/home.controller.js"></script>
+	  <script src="/components/team/team.controller.js"></script>
+	  <script src="/components/about/about.controller.js"></script>
+	  <script src="/components/portfolio/portfolio.controller.js"></script>
+	  <script src="/components/contact/contact.controller.js"></script>
+
 </head>
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-				<div class="SidebarElements">
-					<div class="tab">
-					<div><img src=""></img><div>
-					<div class="title pageTitle">INVESTCUBE</div>
-						<button class="tablinks">Home</button>
-						<hr class="pull-right sideMenuLines">
-						<button class="tablinks">Team</button>
-						<hr class="pull-right sideMenuLines">
-						<button class="tablinks">About</button>
-						<hr class="pull-right sideMenuLines">
-						<button class="tablinks">Portfolio</button>
-						<hr class="pull-right sideMenuLines">
-						<button class="tablinks">Contact</button>
-					</div>
-				</div>
-			</div>
-		</div>		
-	</div>
+
+<body class="container-fluid">
+	<div ui-view></div>
 </body>
+
 </html>
 
 <!--<div class="Home-Page" >

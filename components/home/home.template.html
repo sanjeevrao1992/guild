@@ -1,0 +1,23 @@
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 SidebarMenu">
+				<div class="SidebarElements">
+					<div class="tab">
+					<div><img src=""></img><div>
+					<div class="title pageTitle" ui-sref="home">INVESTCUBE</div>
+						<button class="tablinks" ui-sref="home">Home</button>
+						<hr class="pull-right sideMenuLines">
+						<button class="tablinks" ui-sref="home.team({id: $index})">Team</button>
+						<hr class="pull-right sideMenuLines">
+						<button class="tablinks" ui-sref="home.about({id: $index})">About</button>
+						<hr class="pull-right sideMenuLines">
+						<button class="tablinks" ui-sref="home.portfolio({id: $index})">Portfolio</button>
+						<hr class="pull-right sideMenuLines">
+						<button class="tablinks" ui-sref="home.contact({id: $index})">Contact</button>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<ui-view></ui-view>
