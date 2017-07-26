@@ -3,21 +3,34 @@
 			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 SidebarMenu">
 				<div class="SidebarElements">
 					<div class="tab">
-					<div><img src=""></img><div>
+					<div class="Logo"><img src="http://via.placeholder.com/35x35"></img><div>
 					<div class="title pageTitle" ui-sref="home">INVESTCUBE</div>
-						<button class="tablinks" ui-sref="home">Home</button>
 						<hr class="pull-right sideMenuLines">
-						<button class="tablinks" ui-sref="home.team({id: $index})">Team</button>
+						<button class="tablinks" ui-sref="home" ng-click="ctrl.show()">Home</button>
 						<hr class="pull-right sideMenuLines">
-						<button class="tablinks" ui-sref="home.about({id: $index})">About</button>
+						<button class="tablinks" ng-click="ctrl.noShow()" ui-sref="home.team({id: $index})">Team</button>
 						<hr class="pull-right sideMenuLines">
-						<button class="tablinks" ui-sref="home.portfolio({id: $index})">Portfolio</button>
+						<button class="tablinks" ui-sref="home.about({id: $index})" ng-click="ctrl.noShow()">About</button>
 						<hr class="pull-right sideMenuLines">
-						<button class="tablinks" ui-sref="home.contact({id: $index})">Contact</button>
+						<button class="tablinks" ui-sref="home.portfolio({id: $index})" ng-click="ctrl.noShow()">Portfolio</button>
+						<hr class="pull-right sideMenuLines">
+						<button class="tablinks" ui-sref="home.contact({id: $index})" ng-click="ctrl.noShow()">Contact</button>
 					</div>
 				</div>
 			</div>
 		</div>		
+	</div>
+
+	<div ng-show="ctrl.homeShow">
+		<div class="container HomeContainer">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<div><h1>Meet The Team</h1></div>
+				<div><img src="http://via.placeholder.com/250x400"></img></div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				
+			</div>
+		</div>
 	</div>
 
 	<ui-view></ui-view>
