@@ -1,3 +1,10 @@
+.RestTemplate {
+    padding-top: 8%;
+    color:#5c0099;
+}
+
+
+
 div.tab {
     
     border: 1px solid #ccc;
@@ -34,7 +41,7 @@ div.tab button:hover {
 	font-size: 18px;
 }
 
-div.tab button.active {
+.tablinks:active {
 	color: purple;
 	border-right: 3px;
 	border-bottom: 0px;
@@ -43,6 +50,40 @@ div.tab button.active {
 	border-style: solid;
 	border-color: purple;
 	font-size: 18px;
+}
+
+.tablinks:visited {
+    color: purple;
+    border-right: 3px;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: purple;
+    font-size: 18px;
+}
+
+div.tab button.active {
+    color: purple;
+    border-right: 3px;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: purple;
+    font-size: 18px;
+}
+
+
+div.tab button:visited {
+    color: purple;
+    border-right: 3px;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-style: solid;
+    border-color: purple;
+    font-size: 18px;
 }
 
 /*.tabcontent {
@@ -56,10 +97,20 @@ div.tab button.active {
 
 .SidebarElements {
 height: 100%;
+position: relative;
+min-height: 100%;
+height: 100vh;
 }
 
 .SidebarMenu {
-    height: 1000px;
+    position: relative;
+    padding-left: 0;
+    height: 1940px;
+    min-height: 100%;
+}
+
+.FirstSection{
+    display: block;
 }
 
 .container {
@@ -67,12 +118,32 @@ margin-left: 0px;
 padding-left: 0px;
 }
 
+.FirstSectionRow{
+    height: 600px;
+    overflow: auto;
+}
+
+.investmentsRow {
+    overflow: auto;
+}
+
+.HorizontalScrollRow {
+    overflow: auto;
+    width: 100%;
+}
+
+
+
 .pageTitle {
 text-align: center;
 	padding-top: 8px;
 	padding-bottom: 10px;
-	font-size: 18px;
-	letter-spacing: 7px;
+	font-size: 20px;
+	letter-spacing: 9px;
+    width:100%;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #5c0099;
 }
 
 .tablinks {
@@ -92,20 +163,372 @@ padding-right: 15%
     padding-top: 0px;
 }
 
-.SidebarMenu {
-    padding-left: 0;
-}
-
 .pageTitle:hover {
     cursor: pointer;
+    color: #5c0099;
 }
 
 .HomeContainer {
-    padding-left: 29%;
-    padding-top: 7%;
+    padding-left: 0%;
+    padding-top: 10%;
+    width: 100%;
+}
+
+.HomeCantainerSub{
+    margin-left: 10%;
 }
 
 .Logo {
     padding-top: 12px;
     padding-left: 30px;
 }
+
+.Description {
+    padding-left: 280px;
+    margin-top: 85px;
+}
+
+.ImageSection {
+  float: left;
+}
+
+.LinkedinLink{
+    margin-right: 15px;
+}
+
+.investments{
+    overflow: auto;
+}
+
+.ArticlesRow {
+    overflow: auto;
+}
+
+/*Horizontal scroll styles*/
+.HorizontalScroll{
+width:90%;
+    height:50px;
+    margin-bottom: 4%;
+}
+
+#list-container {
+overflow:hidden;    
+width: 93%;  
+float:left;  
+background: transparent;  
+background-color: white !important;
+}
+
+.HorizontalList{
+    background:white;
+min-width:1400px;
+    float:left;
+}
+
+
+#arrowR{
+    width:20px;
+    height:50px;
+    float:right;
+    cursor:pointer;
+}
+
+
+#arrowL{
+    width:20px;
+    height:50px;
+    float:left;
+    cursor:pointer;
+}
+
+.HorizontalItem{
+    width:140px;
+    height:40px;
+    margin:5px;
+    float:left;
+    position:relative;
+    background: transparent;
+    background-color: white !important;
+    text-decoration: none;
+    text-decoration: underline;
+    color: black;
+    font-family: helvetica Neue; 
+}
+
+a{
+    color: black;
+}
+/*Ends - Horizontal scroll styles*/
+
+.HorizontalLine {
+    color: black;
+}
+
+.SecondAuthoredArticle {
+    margin-left: 0px;
+}
+
+.FirstArticleLine {
+    margin-bottom: 10px;
+    width: 70%;
+    margin-top: 10px;
+    margin-right: 0px;
+    float: left;
+}
+
+.ArticleLineText {
+    font-size: 12px;
+    padding-left: 8px;
+    margin-top: 10px;
+}
+
+.SecondArticleLine {
+    margin-bottom: 10px;
+    width: 75%;
+    margin-top: 10px;
+    margin-right: 0px;
+    float: left;;    
+}
+
+.FirstArticleText{
+    width: 68%;
+}
+
+.SecondArticleText {
+   width: 68%;
+}
+
+/*Subscription screen*/
+.SubscriptionScreen {
+    background-image: url("/assets/images/subscribe.jpg");
+    height: 300px;
+    width: 100%;
+}
+
+.SubscriptionText {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 80px;
+    color: white;
+}
+
+.subscribe{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    padding-right: 100px;
+    margin-top: 20px;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.subscribe:hover {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    padding-right: 100px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.InputFields {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.Template{
+    margin-left: 23.8%;
+}
+
+.InputText {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    width: 80%;
+}
+
+.EmailText {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    width: 80%;
+    color: white;
+}
+
+.SubscriptionScreenRow {
+    margin-top: 30px;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    clear: right;
+}
+
+/*Search Functionality*/
+.footer {
+clear: top;
+height: 150px;
+background-image: url("/assets/images/world.jpg");
+}
+
+.SearchForm {
+    padding-top: 10%;
+}
+
+.add-on .input-group-btn > .btn {
+  border-left-width:0;left:-2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+/* stop the glowing blue shadow */
+.add-on .form-control:focus {
+ box-shadow:none;
+ -webkit-box-shadow:none; 
+ border-color:#cccccc; 
+}
+.form-control{width:20%}
+.navbar-nav > li > a {
+  border-right: 1px solid #ddd;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.navbar-nav:last-child{ border-right:0}
+
+.footerLabelContainer{
+    padding-top: 11.5%;
+    text-align: center;
+    width: 60%;
+    padding-left: 100px;
+}
+
+.footerLabels{
+    padding-left: 15px;
+}
+
+.footerLabels:hover {
+    padding-left: 15px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.Thought {
+    font-family: helvetica Neue;
+    font-size: 20px;
+    line-height: 1.1;
+    padding-bottom: 10px;
+    padding-top: 31px;
+    overflow: hidden;
+    color: #5c0099;
+    font-style: italic;
+}
+
+.MeetTheTeam {
+    font-family: helvetica Neue;
+    margin-bottom: 25px;
+    color: #5c0099;
+}
+
+.Name{
+    font-family: helvetica Neue; 
+    font-size: 22px;
+    margin-bottom: -10px;
+}
+
+.Designtion{
+    font-family: helvetica Neue; 
+    font-size: 18px;
+}
+
+.place{
+    font-family: helvetica Neue
+}
+
+.contentText {
+    padding-top: 20px;
+    font-family: helvetica Neue; 
+    font-size: 16px;
+}
+
+.InvestmentTitles {
+    font-family: helvetica Neue; 
+    font-weight: bold;
+}
+
+.AuthoredTitle{
+    font-family: helvetica Neue; 
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.InvestmentData{
+    font-family: helvetica Neue; 
+}
+
+.input::placeholder {
+    color: white;
+}
+
+.EmailText::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.InputText::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { ... }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+    .pageTitle {
+text-align: center;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 8px;
+    width:100%;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #5c0099;
+}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) { 
+.pageTitle {
+text-align: center;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 8px;
+    width:100%;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #5c0099;
+}
+ }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) { 
+.pageTitle {
+text-align: center;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 8px;
+    width:100%;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #5c0099;
+}
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }

@@ -11,6 +11,7 @@
 				controllerAs: 'ctrl',
 				templateUrl: '/components/home/home.template.html'
 			})
+			
 			.state('home.team', {
 				url: '/team/{id}',
 				templateUrl: '/components/team/team.template.html',

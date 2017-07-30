@@ -21,16 +21,163 @@
 		</div>		
 	</div>
 
-	<div ng-show="ctrl.homeShow">
+	    <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+	<div ng-show="ctrl.homeShow" class="Template">
+
 		<div class="container HomeContainer">
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-				<div><h1>Meet The Team</h1></div>
-				<div><img src="http://via.placeholder.com/250x400"></img></div>
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+			<div class="HomeCantainerSub">
+				<div class="row FirstSectionRow">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 FirstSection">
+						<div class="ImageSection">
+							<div><h1 class="MeetTheTeam">Meet the team</h1></div>
+							<div><img src="/assets/images/Suit2.jpg"></img></div>				
+						</div>
+						<div class="Description">
+							<label class="Name">Iain Shovlin</label><br>
+							<span class="Designtion">Chairman & Founding Partner</span><span class="pull-right TwitterLink"><a href=""><img src="/assets/images/apple-touch-icon-192x192.png" width="25" height="25"></img></a></span><span class="pull-right LinkedinLink"><a href="https://www.linkedin.com/in/sanjeev-rao-03435478/"><img src="/assets/images/if_LinkedIn_1298749.png" width="20" height="20"></img></a></span>	
+							<br/>&nbsp;
+							<p class="place">Chicago, USA</p>
+							<br/>
+							<span style="font-size: 60px; float: left;">&#8220;</span><div class="Thought">Finance is critical. If sufficient investment is made in infrastructure and venture capital is made available, there will be a big improvement in the situation.</div>
+							<p>
+							<div class="contentText">Before forming Guild capital in 2009, Iain was a venture capitalist with Technology Crossover Ventures in Palo Alto, California for six years. At TCV, he undertook investments spanning consumer internet, business process outsourcing, and software. Prior to venture capital, Iain was a management consultant with Bain & Company.</div>
+							<p>
+							<div class="contentText">Iain was born in Glasgow, Scotland and has a M.A. in International Business from the university of Edinburg, Scotland.</div>
+						</div>
+					</div>
+				</div>
+				<div class="row investmentsRow">
+					<div class="investments">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<div class="InvestmentTitles">Prior investments</div>
+							<br>
+							<div class="InvestmentData">
+							AdKnowledge<br>
+							Claria<br>
+							Dermstone<br>
+							Dealon<br>
+							EXL Service (NASDAQ: EXLS)<br>
+							Hautelook (Acquired by Nordstrom)<br>
+							Integres<br>
+							Leadscon (Acquire by Access Intelligence)<br>
+							NexTag<br>
+							SecuritySource<br>
+							Sensa<br>
+							TotalAttorneys<br>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<div class="InvestmentTitles">Active investments</div>
+							<br>
+							<div class="InvestmentData">
+							Argyle Search partners*<br>
+							Candy Club<br>
+							Club W<br>
+							Fabletics<br>
+							Gaming Insiders<br>
+							GoHealth<br>
+							Home Chef<br>
+							JustFab<br>
+							Atidiv<br>
+							MailControl<br>
+							Mystery Tackle Box<br>
+							Techweek*<br>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="row HorizontalScrollRow">
+					<div class="HorizontalScroll">
+					    <div id="arrowL"><span class="fa fa-chevron-left fa-lg"></span></div>
+					    <div id="arrowR"><span class="fa fa-chevron-right fa-lg"></span></div>
+					    <div id="list-container">
+					        <div class='list HorizontalList'>
+					            <div class='HorizontalItem'><a href="">Smriti Jayaraman<br>Vice President</a>
+					            </div>
+					            <div class='HorizontalItem'><a href="">Akshat Jain<br>Senior Associate</a>
+					            </div>
+					            <div class='HorizontalItem'><a href="">Sailesh Mohapatra<br>Senior Associate</a>
+					            </div>
+					            <div class="HorizontalItem"><a href="">Aviral Bhatnagar<br>Associate</a>
+					            </div>
+					            <div class='HorizontalItem'><a href="">Pradeep KrishnaKumar<br>Investor</a>
+					            </div>
+					            <div class='HorizontalItem'><a href="">Sanjeev Rao<br>Front End Developer</a>
+					            </div>
+					            <div class='HorizontalItem'><a href="">Suparna Gharpure<br>Associate</a>
+					            </div>
+					            <div class="HorizontalItem"><a href="">Amit Rangari<br>Legal Counsel</a>
+					            </div>
+					        </div>
+					    </div>
+					</div>
+				</div>
 				
+				<div><hr></div>
+				
+				<div class="row ArticlesRow">
+					<div class="AuthoredTitle">Authored Articles</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<hr class="FirstArticleLine"><span class="ArticleLineText">March 2016</span>
+						<div class="FirstAuthoredArticle"><a href=""><img src="/assets/images/Article1.jpg" height="200" width="250"></img></a></div>
+						<br>
+						<div class="FirstArticleText"><a href="">My experiencd with investing in contrarian markets: good and bad</a></div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<hr class="SecondArticleLine"><span class="ArticleLineText">July 2016</span>
+						<div class="SecondAuthoredArticle"><a href=""><img src="/assets/images/Article2.jpg" height="200" width="250"></img></a></div>
+						<br>
+						<div class="SecondArticleText"><a href="">Building up the start-up ecosystem to drive economics</a></div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-0"></div>
+				</div>
 			</div>
-		</div>
-	</div>
+
+			<div class="row SubscriptionScreenRow col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="SubscriptionScreen" background-image: url("/assets/images/subscribe.jpg")>
+					<div class="SubscriptionText">To receive our 10 page report on the latest investment happeninggs, subscribe now.</div>
+					<div class="InputFields">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<input type="text" name="NameText" class="InputText" placeholder="Name">
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<input type="text" name="MailText" class="EmailText" placeholder="Email id">
+						</div>
+						<div><
+							<button type="submit" class="subscribe pull-right">subsribe</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		      <form class="navbar-form SearchForm col-lg-6 col-md-6 col-sm-6 col-xs-6" role="search">
+    			<div class="input-group add-on">
+    				<input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+	    		     <div class="input-group-btn">
+	        			<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+			      	 </div>
+		    	</div>
+		 	  </form>
+		 	  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footerLabelContainer text-center">
+		 	  	<label class="footerLabels"><a href="">London</a></label>
+		 	  	<label class="footerLabels"><a href="">New York</a></label>
+		 	  	<label class="footerLabels"><a href="">Chicago</a></label>
+		 	  	<label class="footerLabels"><a href="">Los Angeles</a></label>
+		 	  	<label class="footerLabels"><a href="">Mumbai</a></label>
+		 	  </div>
+			</div>
+
+		</div><!--Home Container Ends-->
+	</div><!--Home Show Ends-->
+
 
 	<ui-view></ui-view>
