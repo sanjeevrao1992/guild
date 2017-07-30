@@ -618,6 +618,12 @@ background-image: url("/assets/images/world.jpg");
         margin-top: 0;
         margin-top: 15px;
         text-decoration: none;
+        color: purple;
+        letter-spacing: 9px;
+        padding-left: 10px;
+        font-family: helvetica Neue; 
+        font-weight: bold;
+        font-size: 22px;
     }
 
     .HeaderTitle:hover{
