@@ -1,6 +1,60 @@
+  <header class="visible-xs">
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+        	<div class="navbar-brand">
+	            <p>
+	              <img src="http://via.placeholder.com/35x35" alt="INVESTCUBE">
+	            </p>
+	            <div class="HeaderSecondLine">
+	            	<a href="index.html"><span class="HeaderTitle">INVESTCUBE</span></a>
+					<!--<form class="navbar-form SearchForm" role="search">
+						<div class="input-group add-on">
+							<input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+							<div class="input-group-btn">
+								<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+							</div>
+						</div>
+					</form>-->
+	        	</div>
+	        </div><!--Navbar brand closes-->
+
+          <button id="navbarToggle" type="button" class="pull-right navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div> <!--Navbar header closes-->
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">Home</a>
+            </li>
+            <li id="navMenuButton">
+              <a href="#"><br class="hidden-xs"> Team</a>
+            </li>
+            <li>
+              <a href="#"><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#"><br class="hidden-xs"> Portfolio</a>
+            </li>
+            <li>
+              <a href="#"><br class="hidden-xs"> Contact</a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 SidebarMenu">
+			<div class="col-lg-3 col-md-3 col-sm-3 SidebarMenu hidden-xs">
 				<div class="SidebarElements">
 					<div class="tab">
 					<div class="Logo"><img src="http://via.placeholder.com/35x35"></img><div>
@@ -21,12 +75,7 @@
 		</div>		
 	</div>
 
-	    <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
+
 
 	<div ng-show="ctrl.homeShow" class="Template">
 
@@ -36,18 +85,19 @@
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 FirstSection">
 						<div class="ImageSection">
 							<div><h1 class="MeetTheTeam">Meet the team</h1></div>
-							<div><img src="/assets/images/Suit2.jpg"></img></div>				
+							<div class="ImageDiv"><img src="/assets/images/Suit2.jpg"></img></div>				
 						</div>
 						<div class="Description">
 							<label class="Name">Iain Shovlin</label><br>
-							<span class="Designtion">Chairman & Founding Partner</span><span class="pull-right TwitterLink"><a href=""><img src="/assets/images/apple-touch-icon-192x192.png" width="25" height="25"></img></a></span><span class="pull-right LinkedinLink"><a href="https://www.linkedin.com/in/sanjeev-rao-03435478/"><img src="/assets/images/if_LinkedIn_1298749.png" width="20" height="20"></img></a></span>	
+							<span class="Designtion">Chairman & Founding Partner</span>
+							<span class="pull-right TwitterLink"><a href=""><img class="TwitterIcon" src="/assets/images/apple-touch-icon-192x192.png"></img></a></span>
+							<span class="pull-right LinkedinLink"><a href="https://www.linkedin.com/in/sanjeev-rao-03435478/"><img class="LinkedinIcon" src="/assets/images/if_LinkedIn_1298749.png"></img></a></span>	
 							<br/>&nbsp;
 							<p class="place">Chicago, USA</p>
 							<br/>
 							<span style="font-size: 60px; float: left;">&#8220;</span><div class="Thought">Finance is critical. If sufficient investment is made in infrastructure and venture capital is made available, there will be a big improvement in the situation.</div>
 							<p>
 							<div class="contentText">Before forming Guild capital in 2009, Iain was a venture capitalist with Technology Crossover Ventures in Palo Alto, California for six years. At TCV, he undertook investments spanning consumer internet, business process outsourcing, and software. Prior to venture capital, Iain was a management consultant with Bain & Company.</div>
-							<p>
 							<div class="contentText">Iain was born in Glasgow, Scotland and has a M.A. in International Business from the university of Edinburg, Scotland.</div>
 						</div>
 					</div>
@@ -73,7 +123,7 @@
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-							<div class="InvestmentTitles">Active investments</div>
+							<div class="InvestmentTitles SecondInvestmentTiles">Active investments</div>
 							<br>
 							<div class="InvestmentData">
 							Argyle Search partners*<br>
@@ -127,13 +177,13 @@
 					<div class="AuthoredTitle">Authored Articles</div>
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 						<hr class="FirstArticleLine"><span class="ArticleLineText">March 2016</span>
-						<div class="FirstAuthoredArticle"><a href=""><img src="/assets/images/Article1.jpg" height="200" width="250"></img></a></div>
+						<div class="FirstAuthoredArticle"><a href=""><img class="Article1Photo" src="/assets/images/Article1.jpg" height="200" width="250"></img></a></div>
 						<br>
 						<div class="FirstArticleText"><a href="">My experiencd with investing in contrarian markets: good and bad</a></div>
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 						<hr class="SecondArticleLine"><span class="ArticleLineText">July 2016</span>
-						<div class="SecondAuthoredArticle"><a href=""><img src="/assets/images/Article2.jpg" height="200" width="250"></img></a></div>
+						<div class="SecondAuthoredArticle"><a href=""><img class="Article1Photo" src="/assets/images/Article2.jpg" height="200" width="250"></img></a></div>
 						<br>
 						<div class="SecondArticleText"><a href="">Building up the start-up ecosystem to drive economics</a></div>
 					</div>
@@ -159,7 +209,7 @@
 			</div>
 
 			<div class="row footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
-		      <form class="navbar-form SearchForm col-lg-6 col-md-6 col-sm-6 col-xs-6" role="search">
+		      <form class="navbar-form SearchForm col-lg-6 col-md-6 col-sm-6 hidden-xs" role="search">
     			<div class="input-group add-on">
     				<input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
 	    		     <div class="input-group-btn">
@@ -167,7 +217,7 @@
 			      	 </div>
 		    	</div>
 		 	  </form>
-		 	  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footerLabelContainer text-center">
+		 	  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footerLabelContainer text-center">
 		 	  	<label class="footerLabels"><a href="">London</a></label>
 		 	  	<label class="footerLabels"><a href="">New York</a></label>
 		 	  	<label class="footerLabels"><a href="">Chicago</a></label>

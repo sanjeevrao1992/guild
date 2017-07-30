@@ -1,3 +1,7 @@
+.container{
+    margin-right: 0;
+}
+
 .RestTemplate {
     padding-top: 8%;
     color:#5c0099;
@@ -119,11 +123,12 @@ padding-left: 0px;
 }
 
 .FirstSectionRow{
-    height: 600px;
-    overflow: auto;
+    min-height: 550px;
+    overflow: hidden;
 }
 
 .investmentsRow {
+    margin-top: 20px;
     overflow: auto;
 }
 
@@ -174,6 +179,11 @@ padding-right: 15%
     width: 100%;
 }
 
+.ImageDiv {
+    padding-right: 40px;
+    padding-bottom: 5px;
+}
+
 .HomeCantainerSub{
     margin-left: 10%;
 }
@@ -184,8 +194,9 @@ padding-right: 15%
 }
 
 .Description {
-    padding-left: 280px;
+    /*padding-left: 280px;*/
     margin-top: 85px;
+    width: 100%
 }
 
 .ImageSection {
@@ -194,6 +205,16 @@ padding-right: 15%
 
 .LinkedinLink{
     margin-right: 15px;
+}
+
+.TwitterIcon{
+    width: 25px;
+    height: 25px;
+}
+
+.LinkedinIcon{
+    width: 25px;
+    height: 25px;
 }
 
 .investments{
@@ -346,7 +367,7 @@ a{
     border: 0;
     outline: 0;
     background: transparent;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     width: 80%;
 }
 
@@ -354,7 +375,7 @@ a{
     border: 0;
     outline: 0;
     background: transparent;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     width: 80%;
     color: white;
 }
@@ -482,22 +503,212 @@ background-image: url("/assets/images/world.jpg");
     opacity: 0.5;
 }
 
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575px) { ... }
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) { 
+    .HomeContainer {
+        padding-left: 0%;
+        padding-top: 2%;
+        width: 100%;
+    }
+
+    .container-fluid {
+        padding-left: 0;
+    }
+
+    .Template{
+        margin-left: 0;
+    }
+
+    .SecondInvestmentTiles{
+        padding-top: 10px;
+    }
+
+    .Designtion{
+        font-size: 14px;
+    }
+
+    .ImageDiv {
+        padding-right: 15px;
+        padding-bottom: 5px;
+    }
+
+    .TwitterLink{
+        float: none !important;
+
+    }
+
+    .LinkedinLink{
+        float: left !important;
+    }
+
+    .TwitterIcon{
+        width: 35px;
+        height: 35px;
+    }
+
+    .LinkedinIcon{
+        width: 35px;
+        height: 35px;    
+    }
+
+    #list-container{
+        width: 77%;
+    }
+
+    .FirstArticleLine, .SecondArticleLine{
+        width: 85%;
+    }
+
+    .Article1Photo {
+        width: 100%;
+    }
+
+    .Article2Photo {
+        width: 10px;
+    }
+
+    .EmailText{
+        padding-top: 5px;
+    }
+
+    .footerLabels{
+    font-size: 10px;
+    padding-left: 22px;
+    }
+
+    .footerLabels:hover{
+    font-size: 10px;
+    }
+
+    .footerLabelContainer{
+        width: 100%; 
+    }
+
+    .footer {
+        height: 100px;
+        background: grey;
+    }
+
+    .footerLabelContainer{
+        padding-left: 0;
+        padding-top: 11.5%;
+    }
+
+    .SubscriptionScreenRow {
+        width: 100vw;
+    }
+
+    .footer {
+        width: 100vw;
+    }
+
+    .navbar-header{
+        min-height: 100px;
+
+    }
+
+    .navbar-brand{
+        margin-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .HeaderTitle{
+        margin-top: 0;
+        margin-top: 15px;
+        text-decoration: none;
+    }
+
+    .HeaderTitle:hover{
+        text-decoration: none;
+    }
+
+    #header-nav{
+
+    }
+
+    .FirstArticleText, .SecondArticleText{
+        width: 100%;
+    }
+
+    .navbar-form{
+    padding: 0 0;
+    margin: 0 0;
+    border: 0;
+    }
+
+    .form {
+        margin: 0;
+        padding: 0;
+        display: inline !important;
+    }
+
+    .input-group{
+        width: 22%;
+    }
+
+    .SearchForm{
+        display: inline;
+    }
+
+    #navbarToggle {
+        float: right;
+        margin-top: 0;
+        border: none;
+        margin-left: 333px;
+    }
+
+    .HeaderSecondLine{
+        display: inline !important;
+    }
+
+
+}
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
     .pageTitle {
-text-align: center;
-    padding-top: 8px;
-    padding-bottom: 10px;
-    font-size: 18px;
-    letter-spacing: 8px;
-    width:100%;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    color: #5c0099;
-}
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 10px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        width:100%;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        color: #5c0099;
+    }
+
+    .SecondInvestmentTiles {
+        margin-top: 20px;
+    }
+
+    #list-container{
+        width: 77%;
+    }
+
+        .Template{
+        margin-left: 0;
+    }
+
+    .SecondInvestmentTiles{
+        padding-top: 10px;
+    }
+
+    .Designtion{
+        font-size: 14px;
+    }
+
+    .ImageDiv {
+        padding-right: 15px;
+        padding-bottom: 5px;
+    }
+
+
+    #list-container{
+        width: 77%;
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -507,12 +718,16 @@ text-align: center;
     padding-top: 8px;
     padding-bottom: 10px;
     font-size: 18px;
-    letter-spacing: 8px;
+    letter-spacing: 3px;
     width:100%;
     font-family: 'Playfair Display', serif;
     font-weight: bold;
     color: #5c0099;
 }
+
+    #list-container{
+        width: 77%;
+    }
  }
 
 /*Large devices (desktops, 992px and up)*/
