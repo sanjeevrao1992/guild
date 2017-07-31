@@ -321,7 +321,7 @@ a{
 
 /*Subscription screen*/
 .SubscriptionScreen {
-    background-image: url("assets/images/subscribe.jpg");
+    background-image: url("../images/subscribe.jpg");
     height: 300px;
     width: 100%;
 }
@@ -393,7 +393,7 @@ a{
 .footer {
 clear: top;
 height: 150px;
-background-image: url("assets/images/world.jpg");
+background-image: url("../images/world.jpg");
 }
 
 .SearchForm {
