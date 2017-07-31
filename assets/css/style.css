@@ -555,7 +555,11 @@ background-image: url("/assets/images/world.jpg");
         width: 77%;
     }
 
-    .FirstArticleLine, .SecondArticleLine{
+    .FirstArticleLine{
+        width: 80%;
+    }
+
+    .SecondArticleLine{
         width: 85%;
     }
 
@@ -626,7 +630,15 @@ background-image: url("/assets/images/world.jpg");
         font-size: 22px;
     }
 
-    .HeaderTitle:hover{
+    .HeaderTitle:hover, .HeaderSecondLine:visited{
+        text-decoration: none;
+    }
+
+    .HeaderTitle:visited {
+        text-decoration: none;
+    }
+
+    .HeaderTitle:active {
         text-decoration: none;
     }
 
@@ -667,6 +679,18 @@ background-image: url("/assets/images/world.jpg");
 
     .HeaderSecondLine{
         display: inline !important;
+    }
+
+    .Designtion {
+        display: block;
+    }
+
+    #nav-list{
+        opacity: 1;
+    }
+
+    .container-fluid{
+        padding-right: 0;
     }
 
 

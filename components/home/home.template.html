@@ -7,7 +7,7 @@
 	              <img src="http://via.placeholder.com/35x35" alt="INVESTCUBE">
 	            </p>
 	            <div class="HeaderSecondLine">
-	            	<a class="HeaderTitle" href="index.html"><span class="HeaderTitle">INVESTCUBE</span></a>
+	            	<a class="HeaderTitle" ui-sref="home"><span class="HeaderTitle" ng-click="ctrl.show()">INVESTCUBE</span></a>
 					<!--<form class="navbar-form SearchForm" role="search">
 						<div class="input-group add-on">
 							<input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
@@ -29,21 +29,21 @@
         </div> <!--Navbar header closes-->
         
         <div id="collapsable-nav" class="collapse navbar-collapse">
-           <ul id="nav-list" class="nav navbar-nav navbar-right">
+           <ul id="nav-list" class="text-center nav navbar-nav navbar-right">
 	            <li id="navHomeButton" class="visible-xs active">
-	              <a href="index.html">Home</a>
+	              <a ui-sref="home" data-toggle="collapse" data-target="#collapsable-nav" ng-click="ctrl.show()">Home</a>
 	            </li>
 	            <li id="navMenuButton">
-	              <a href="#"><br class="hidden-xs"> Team</a>
+	              <a ui-sref="home.team({id: $index})" data-toggle="collapse" data-target="#collapsable-nav" ng-click="ctrl.noShow()"><br class="hidden-xs"> Team</a>
 	            </li>
 	            <li>
-	              <a href="#"><br class="hidden-xs"> About</a>
+	              <a ui-sref="home.about({id: $index})" data-toggle="collapse" data-target="#collapsable-nav" ng-click="ctrl.noShow()"><br class="hidden-xs"> About</a>
 	            </li>
 	            <li>
-	              <a href="#"><br class="hidden-xs"> Portfolio</a>
+	              <a ui-sref="home.portfolio({id: $index})" data-toggle="collapse" data-target="#collapsable-nav" ng-click="ctrl.noShow()"><br class="hidden-xs"> Portfolio</a>
 	            </li>
 	            <li>
-	              <a href="#"><br class="hidden-xs"> Contact</a>
+	              <a ui-sref="home.contact({id: $index})" data-toggle="collapse" data-target="#collapsable-nav" ng-click="ctrl.noShow()"><br class="hidden-xs"> Contact</a>
 	            </li>
           </ul><!-- #nav-list -->
         </div><!-- .collapse .navbar-collapse -->
